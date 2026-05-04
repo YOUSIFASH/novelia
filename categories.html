@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novelia</title>
+
+    <link rel="stylesheet" href="./assets/styles/categories.css" />
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/assets/img/logo1.png" alt="logo" />
+        </div>
+
+        <div class="links">
+          <a href="index.html">Home</a>
+          <a href="book.html">Books</a>
+          <a href="categories.html">Categories</a>
+          <a href="author.html">Authors</a>
+          <a href="publish.html">Publishers</a>
+          <a href="contuct-us.html">Contact Us</a>
+        </div>
+
+        <div class="nav-right">
+          <button id="switch-theme">
+            <i class="fa-regular fa-sun"></i>
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <input type="text" placeholder="Search..." class="search" />
+          <button onclick="login()" class="login-btn">Login</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- TITLE -->
+    <section class="sec-title">
+      <h2>Categories</h2>
+    </section>
+    <section class="featured">
+      <!-- CATEGORY 1 -->
+      <section class="category-section">
+        <div class="category">
+          <h3>Classic Literature</h3>
+          <div class="books-grid">
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/To Kill a Mockingbird.jpg"
+                alt="To Kill a Mockingbird"
+              />
+              <div class="book-info">
+                <h3>To Kill a Mockingbird</h3>
+                <p>Harper Lee</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img src="./assets/categories-img/1984.jpg" alt="1984" />
+              <div class="book-info">
+                <h3>1984</h3>
+                <p>George Orwell</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/Pride and Prejudice.jpg"
+                alt="Pride and Prejudice"
+              />
+              <div class="book-info">
+                <h3>Pride and Prejudice</h3>
+                <p>Jane Austen</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/Jane Eyre.jpg"
+                alt="Jane Eyre"
+              />
+              <div class="book-info">
+                <h3>Jane Eyre</h3>
+                <p>Charlotte Brontë</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/War and Peace.jpg"
+                alt="War and Peace"
+              />
+              <div class="book-info">
+                <h3>War and Peace</h3>
+                <p>Leo Tolstoy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY 2 -->
+      <section class="category-section">
+        <div class="category">
+          <h3>Fantasy & Adventure</h3>
+          <div class="books-grid">
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/The Hobbit.jpg"
+                alt="The Hobbit"
+              />
+              <div class="book-info">
+                <h3>The Hobbit</h3>
+                <p>J.R.R. Tolkien</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/The Lord of the Rings.jpg"
+                alt="The Lord of the Rings"
+              />
+              <div class="book-info">
+                <h3>The Lord of the Rings</h3>
+                <p>J.R.R. Tolkien</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/Harry Potter and the Sorcerer’s Stone.jpg"
+                alt="Harry Potter and the Sorcerer’s Stone"
+              />
+              <div class="book-info">
+                <h3>Harry Potter and the Sorcerer’s Stone</h3>
+                <p>J.K. Rowling</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/Life of Pi.jpg"
+                alt="Life of Pi"
+              />
+              <div class="book-info">
+                <h3>Life of Pi</h3>
+                <p>Yann Martel</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/The Book Thief.jpg"
+                alt="The Book Thief"
+              />
+              <div class="book-info">
+                <h3>The Book Thief</h3>
+                <p>Markus Zusak</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY 3 -->
+      <section class="category-section">
+        <div class="category">
+          <h3>Mystery & Thriller</h3>
+          <div class="books-grid">
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/The Da Vinci Code.jpg"
+                alt="The Da Vinci Code"
+              />
+              <div class="book-info">
+                <h3>The Da Vinci Code</h3>
+                <p>Dan Brown</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img src="./assets/categories-img/• Inferno.jpg" alt=" Inferno" />
+              <div class="book-info">
+                <h3>Inferno</h3>
+                <p>Dan Brown</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img src="./assets/categories-img/Dracula.jpg" alt="Dracula" />
+              <div class="book-info">
+                <h3>Dracula</h3>
+                <p>Bram Stoker</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/The Picture of Dorian Gray.jpg"
+                alt="The Picture of Dorian Gray"
+              />
+              <div class="book-info">
+                <h3>The Picture of Dorian Gray</h3>
+                <p>Oscar Wilde</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/The Catcher in the Rye.jpg"
+                alt="The Catcher in the Rye"
+              />
+              <div class="book-info">
+                <h3>The Catcher in the Rye</h3>
+                <p>J.D. Salinger</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATEGORY 4 -->
+      <section class="category-section">
+        <div class="category">
+          <h3>Philosophy & Modern Fiction</h3>
+          <div class="books-grid">
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/The Alchemist.jpg"
+                alt="The Alchemist"
+              />
+              <div class="book-info">
+                <h3>The Alchemist</h3>
+                <p>Paulo Coelho</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/The Little Prince.jpg"
+                alt="The Little Prince"
+              />
+              <div class="book-info">
+                <h3>The Little Prince</h3>
+                <p>Antoine de Saint-Exupéry</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/Brave New World.jpg"
+                alt="Brave New World"
+              />
+              <div class="book-info">
+                <h3>Brave New World</h3>
+                <p>Aldous Huxley</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/Fahrenheit 451.jpg"
+                alt="Fahrenheit 451"
+              />
+              <div class="book-info">
+                <h3>Fahrenheit 451</h3>
+                <p>Ray Bradbury</p>
+              </div>
+            </div>
+
+            <div class="book-card">
+              <img
+                src="./assets/categories-img/The Kite Runner.jpg"
+                alt="The Kite Runner"
+              />
+              <div class="book-info">
+                <h3>The Kite Runner</h3>
+                <p>Khaled Hosseini</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FOOTER -->
+    <section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-box">
+            <h3>NOVELIA</h3>
+            <p>Your gateway to a world of books and knowledge.</p>
+          </div>
+
+          <div class="footer-box">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="book.html">Books</a>
+            <a href="categories.html">Categories</a>
+            <a href="author.html">Authors</a>
+            <a href="publish.html">Publishers</a>
+            <a href="contuct-us.html">Contact Us</a>
+          </div>
+
+          <div class="footer-box">
+            <h4>Contact</h4>
+            <p>Email: info@novelia.com</p>
+            <p>Phone: <a href="tel:+201012345678">+20 101 234 5678</a></p>
+          </div>
+
+          <div class="footer-box">
+            <h4>Follow Us</h4>
+            <p>Facebook | Instagram | WhatsApp</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 NOVELIA. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </section>
+
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>

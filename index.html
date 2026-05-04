@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Novelia</title>
+
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="/assets/img/logo1.png" alt="logo" />
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="book.html">Books</a>
+        <a href="categories.html">Categories</a>
+        <a href="author.html">Authors</a>
+        <a href="publish.html">Publishers</a>
+        <a href="contuct-us.html">Contact Us</a>
+      </div>
+
+      <div class="nav-right">
+        <button id="switch-theme">
+          <i class="fa-regular fa-sun"></i>
+          <i class="fa-regular fa-moon"></i>
+        </button>
+        <input type="text" placeholder="Search..." class="search" />
+        <button onclick="login()" class="login-btn">Login</button>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="overlay">
+        <div class="hero-content">
+          <h1>Welcome to <span>Novelia</span></h1>
+          <p>Your gateway to endless stories and knowledge.</p>
+          <button>Explore Books</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VIDEO ================= -->
+    <section class="video-section">
+      <div class="video-box">
+        <video controls autoplay muted loop>
+          <source src="/assets/video/presentation video.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="text-box">
+        <h2 id="typing"></h2>
+      </div>
+    </section>
+
+    <!-- ================= BOOKS ================= -->
+    <section class="featured" id="books">
+      <div class="section-head">
+        <h2 class="books-title">
+          <a href="/book.html">Featured Books</a>
+        </h2>
+
+        <a href="./book.html" class="view-all">View All →</a>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="/assets/img/picture1.jpeg" />
+          <p class="book-name">To Kill a Mockingbird</p>
+          <p class="author-name">Harper Lee</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/picture2.jpeg" />
+          <p class="book-name">The Hobbit</p>
+          <p class="author-name">J.R.R. Tolkien</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/picture3.jpeg" />
+          <p class="book-name">The Da Vinci Code</p>
+          <p class="author-name">Dan Brown</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/picture4.jpeg" />
+          <p class="book-name">The Alchemist</p>
+          <p class="author-name">Paulo Coelho</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/picture5.jpeg" />
+          <p class="book-name">Pride and Prejudice</p>
+          <p class="author-name">Jane Austen</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/picture6.jpeg" />
+          <p class="book-name">The Lord of the Rings</p>
+          <p class="author-name">J.R.R. Tolkien</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/pictures7.jpeg" />
+          <p class="book-name">Inferno</p>
+          <p class="author-name">Dan Brown</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="categories" id="categories">
+      <h2>Browse by Category</h2>
+
+      <div class="category-boxes">
+        <div>Classic Literature</div>
+        <div>Fantasy & Adventure</div>
+        <div>Mystery & Thriller</div>
+        <div>Philosophy & Modern Fiction</div>
+      </div>
+    </section>
+
+    <!-- ================= AUTHORS ================= -->
+    <section class="featured" id="authors">
+      <div class="section-head">
+        <h2 class="authors-title">
+          <a href="/author.html">Authors</a>
+        </h2>
+
+        <a href="./author.html" class="view-all">View All →</a>
+      </div>
+
+      <!-- ================= AUTHORS CARDS ================= -->
+      <div class="cards">
+        <!-- ================= AUTHORS CARDS ================= -->
+        <div class="cards">
+          <div class="card">
+            <img src="/assets/img/harper lee.avif" alt="Harper Lee" />
+            <p class="author-name">Harper Lee</p>
+          </div>
+
+          <div class="card">
+            <img src="/assets/img/J.R.R. Tolkien.webp" alt="J.R.R. Tolkien" />
+            <p class="author-name">J.R.R. Tolkien</p>
+          </div>
+
+          <div class="card">
+            <img src="/assets/img/dan brown.jpg" alt="Dan Brown" />
+            <p class="author-name">Dan Brown</p>
+          </div>
+
+          <div class="card">
+            <img src="/assets/img/AJane Austen.jpg" alt="Jane Austen" />
+            <p class="author-name">Jane Austen</p>
+          </div>
+
+          <div class="card">
+            <img src="/assets/img/charles dickens.avif" alt="Charles Dickens" />
+            <p class="author-name">Charles Dickens</p>
+          </div>
+
+          <div class="card">
+            <img src="/assets/img/leo-tolstoy.avif" alt="Leo Tolstoy" />
+            <p class="author-name">Leo Tolstoy</p>
+          </div>
+
+          <div class="card">
+            <img src="/assets/img/Oscar-Wilde-1882.webp" alt="Oscar Wilde" />
+            <p class="author-name">Oscar Wilde</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PUBLISHERS ================= -->
+    <section class="featured" id="publishers">
+      <div class="section-head">
+        <h2 class="publishers-title">
+          <a href="/publish.html">Publishers</a>
+        </h2>
+
+        <a href="./publish.html" class="view-all">View All →</a>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="/assets/img/penguin.png" />
+          <p class="publishers-name">Penguin</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/Richard Bentley.jpg" />
+          <p class="publishers-name">Richard Bentley</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/Riverhead_Books.jpg" />
+          <p class="publishers-name">Riverhead Books</p>
+        </div>
+
+        <div class="card">
+          <img
+            src="/assets/img/RHPG_Imprint-Logos_Squares_200x200Ballantine.avif"
+          />
+          <p class="publishers-name">Ballantine Books</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/The Russian Messenger.jpg" />
+          <p class="publishers-name">The Russian Messenger</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/Scholastic.jpg" />
+          <p class="publishers-name">Scholastic</p>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/Simon & Schuster.png" />
+          <p class="publishers-name">Simon & Schuster</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-box">
+            <h3>NOVELIA</h3>
+            <p>Your gateway to a world of books and knowledge.</p>
+          </div>
+
+          <div class="footer-box">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="book.html">Books</a>
+            <a href="categories.html">Categories</a>
+            <a href="author.html">Authors</a>
+            <a href="publish.html">Publishers</a>
+            <a href="contuct-us.html">Contact Us</a>
+          </div>
+
+          <div class="footer-box">
+            <h4>Contact</h4>
+            <p>Email: info@novelia.com</p>
+            <p>Phone: <a href="tel:+201012345678">+20 101 234 5678</a></p>
+          </div>
+
+          <div class="footer-box">
+            <h4>Follow Us</h4>
+            <p>Facebook | Instagram | WhatsApp</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 NOVELIA. All Rights Reserved.</p>
+        </div>
+      </footer>
+    </section>
+    <script src="/assets/js/index.js"></script>
+  </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const text =
+        "Novelia is a digital platform for exploring books, authors, and publishers in an easy and enjoyable way.";
+
+      let index = 0;
+      let started = false;
+
+      const typingElement = document.getElementById("typing");
+
+      function type() {
+        if (index < text.length) {
+          typingElement.textContent += text.charAt(index);
+          index++;
+          setTimeout(type, 50);
+        }
+      }
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && !started) {
+              started = true;
+              type();
+            }
+          });
+        },
+        {
+          threshold: 0.5,
+        },
+      );
+
+      observer.observe(typingElement);
+    });
+  </script>
+</html>

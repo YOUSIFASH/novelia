@@ -21,7 +21,7 @@ body{
   background: var(--backgorung-color);
 }
 
-/* ================= NAVBAR ================= */
+
 .navbar{
   display:flex;
   justify-content:space-between;
@@ -62,7 +62,7 @@ img{
   outline:none;
 }
 
-/* ================= BUTTONS ================= */
+
 button,.login-btn{
   background: var(--background-color1);
   border:none;
@@ -79,7 +79,7 @@ button:hover,.login-btn:hover{
   box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* ================= FEATURED ================= */
+
 .featured{
   padding:50px;
 }
@@ -90,7 +90,7 @@ button:hover,.login-btn:hover{
   font-size:32px;
 }
 
-/* ================= AUTHORS GRID ================= */
+
 .publishers{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
@@ -99,7 +99,7 @@ button:hover,.login-btn:hover{
   justify-items:center;
 }
 
-/* ================= AUTHOR CARD ================= */
+
 .card{
   background:#fff;
   padding: 15px;
@@ -142,7 +142,7 @@ button:hover,.login-btn:hover{
   
 }
 
-/* ================= FOOTER ================= */
+
 .footer{
   background: var(--header-color);
   color: var(--font-color);
@@ -190,7 +190,7 @@ button:hover,.login-btn:hover{
   opacity:0.8;
 }
 
-/* ================= RESPONSIVE ================= */
+
 @media(max-width:992px){
   .navbar{
     flex-direction:column;

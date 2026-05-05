@@ -13,7 +13,7 @@
 <!-- Navbar -->
     <nav class="navbar">
       <div class="logo">
-        <img src="./assets/img/logo1.png" alt="logo" />
+        <img src="./assets/img/logo1.png" alt="logo" >
       </div>
 
       <div class="links">
@@ -30,7 +30,7 @@
           <i class="fa-regular fa-sun"></i>
           <i class="fa-regular fa-moon"></i>
           </button>
-        <input type="text" placeholder="Search..." class="search" />
+        <input type="text" placeholder="Search..." class="search" >
         <button onclick="login()" class="login-btn">Login</button>
       </div>
     </nav>
@@ -179,42 +179,12 @@
 </footer>
 </section>>
 
-<script src="./assets/js/index.js"></script>
+<script src="./assets/js/index.js">
+
+</script>
 </body>
 
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    const text = "يُعتبر موقع نوفيليا منصة إلكترونية متكاملة تعمل بمثابة معرض رقمي للكتب يتيح لعشاق القراءة استكشاف العناوين المختلفة. يوفر هذا الموقع للمستخدمين فرصة الاطلاع على المحتوى الأدبي والتعرف عن قرب على هوية المؤلفين الذين صاغوا هذه الأعمال. بالإضافة إلى ذلك، يمكن للزوار تتبع دار النشر المسؤولة عن إصدار هذه الكتب لضمان تجربة توثيقية شاملة.";
-    let index = 0;
-    let started = false;
-
-    const typingElement = document.getElementById("typing");
-
-    function type() {
-        if (index < text.length) {
-            typingElement.textContent += text.charAt(index);
-            index++;
-            setTimeout(type, 50);
-        }
-    }
-
-    // 👇 يبدأ لما توصل للعنصر بالسكرول
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && !started) {
-                started = true;
-                type();
-            }
-        });
-    }, {
-        threshold: 0.5 // يبدأ لما يظهر 50% من العنصر
-    });
-
-    observer.observe(typingElement);
-
-});
-</script>
+  
 </html>
 
 

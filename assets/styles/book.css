@@ -17,7 +17,7 @@ body{
   background: var(--backgorung-color);
 }
 
-/* ================= NAVBAR ================= */
+
 .navbar{
   display:flex;
   justify-content:space-between;
@@ -53,7 +53,7 @@ img{
   outline:none;
 }
 
-/* ================= BUTTONS ================= */
+
 button, .login-btn{
   background: var(--background-color1);
   border:none;
@@ -70,7 +70,7 @@ button:hover, .login-btn:hover{
   background: var(--primary-color);
 }
 
-/*===============tilte=============*/
+
 .sec-title h2{
   color: var(--font-color);
   text-align: center;
